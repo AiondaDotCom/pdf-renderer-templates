@@ -1,0 +1,55 @@
+{
+    "downloadFilename": "dokument.pdf",
+    "documentTitle": "Testdokument",
+    "erstellungsDatum": "09.11.2018",
+    "faelligkeitsDatum": "13.11.2018",
+    "rechnungsNummer": "1234567890",
+    "myCompany": {
+        "geschaeftsfuehrer": "Max Mustermann",
+        "name": "Muster GmbH",
+        "taetigkeit": "Softwareentwicklung",
+        "adresse": {
+            "strasse": "Musterstraße 742",
+            "PLZ": "12345",
+            "ort": "Stuttgart"
+        },
+        "telefon": "+49.123.456.7890",
+        "email": "contact@example.com",
+        "bank": {
+            "name": "Musterbank",
+            "IBAN": "DEXX XXXX XXXX XXXX XX",
+            "BIC": "XXXXXXXXXXX"
+        },
+        "finanzamt": {
+            "name": "Finanzamt Musterstadt",
+            "steuernummer": "12345/12345",
+            "UStIDNr": "DE123456789"
+        },
+        "gericht": {
+            "handelsregister": "Handelsregister B",
+            "amtsgericht": "Amtsgericht Stuttgart",
+            "registernummer": "HRB 123456"
+        }
+    },
+    "empfaenger": {
+        "polizeistelle": "Polizeidienststelle X in Musterstadt",
+        "name": "Frau Erika Musterfrau",
+        "adresse": {
+            "strasse": "Musterstraße 42",
+            "PLZ": "42424",
+            "ort": "Musterstadt"
+        }
+    },
+    "leistungen": [
+        {
+            "az": "Anfrage vom 01.11.2018 AZ 123456/2018",
+            "leistung": "Auswertung Logindaten von böse@email.adresse #1",
+            "betrag": "42,00€"
+        },
+        {
+            "az": "Anfrage vom 01.11.2018 AZ 123456/2018",
+            "leistung": "Auswertung Logindaten von böse@email.adresse #2",
+            "betrag": "42,00€"
+        }
+    ]
+}

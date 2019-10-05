@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="{{stylePath}}">
+
+        <title>{{documentTitle}}</title>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Logdaten</h1>
+            <table class="table">
+                <thead>
+                    <tr>
+                    <th scope="col">Datum</th>
+                    <th scope="col">IP</th>
+                    <th scope="col">Inhalt</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each logdaten}}
+                        <tr class="item">
+                            <td>{{date}}</td>
+                            <td>{{ip}}</td>
+                            <td>{{content}}</td>
+                        </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

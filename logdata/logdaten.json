@@ -1,0 +1,16 @@
+{
+    "downloadFilename": "logdaten.pdf",
+    "documentTitle": "Logdaten",
+    "logdaten": [
+        {
+            "date": "01.11.2018 12:13",
+            "ip": "192.168.2.42",
+            "content": "Exercitationem iure laborum ad eum. Occaecati perferendis nisi quod. Accusantium et iure quia et laboriosam porro vero. Accusamus quis quae perferendis."
+        },
+        {
+            "date": "01.11.2018 12:14",
+            "ip": "192.168.2.42",
+            "content": "Exercitationem iure laborum ad eum. Occaecati perferendis nisi quod. Accusantium et iure quia et laboriosam porro vero. Accusamus quis quae perferendis."
+        }
+    ]
+}

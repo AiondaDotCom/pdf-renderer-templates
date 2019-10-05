@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="{{stylePath}}">
+        <script></script>
+    </head>
+    <body style="border:0; margin: 0;">
+        <div class="container">
+            <table class="table">
+                <tbody>
+                    <tr class="item">
+                        <td>
+                            {{myCompany.name}}<br>
+                            {{myCompany.taetigkeit}}
+                        </td>
+                        <td>
+                            {{myCompany.adresse.strasse}}<br>
+                            {{myCompany.adresse.PLZ}} {{myCompany.adresse.ort}}
+                        </td>
+                        <td>
+                            <b>Tel. {{myCompany.telefon}}</b><br>
+                            {{myCompany.email}}
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="{{stylePath}}">
+
+        <title>{{documentTitle}}</title>
+        <style>
+            .faded {
+                color: rgb(166, 166, 166);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+
+            <div class="container">
+                <p class="faded">
+                        {{myCompany.name}}, {{myCompany.adresse.strasse}}, {{myCompany.adresse.PLZ}} {{myCompany.adresse.ort}}
+                    </p>
+        
+                    <p>
+                        {{empfaenger.polizeistelle}}<br>
+                        {{empfaenger.name}}<br>
+                        {{empfaenger.adresse.strasse}}<br><br>
+                
+                        {{empfaenger.adresse.PLZ}} {{empfaenger.adresse.ort}}
+                    </p>
+        
+                    <p class="text-right">{{myCompany.adresse.ort}}, {{erstellungsDatum}}</p>
+            
+            </div>
+
+
+            <div class="container">
+                <div class="row">
+                    <!-- Linke Spalte -->
+                    <div class="col-3" style="width: 24.9%; float: left">
+                        <p>
+                            <b>Rechnung</b><br>
+                            Nummer:<br>
+                            {{rechnungsNummer}}
+                        </p>
+
+                        <p>
+                            Fälligkeit:<br>
+                            {{faelligkeitsDatum}}
+                        </p>
+
+                        <p class="faded">
+                            {{myCompany.finanzamt.name}}<br>
+                            Steuernummer:<br>
+                            {{myCompany.finanzamt.steuernummer}}<br>
+                            USt-IdNr.<br>
+                            {{myCompany.finanzamt.UStIDNr}}
+                        </p>
+
+                        <p class="faded">
+                            Geschäftsführer:<br>
+                            {{myCompany.geschaeftsfuehrer}}
+                        </p>
+
+                        <p class="faded">
+                            {{myCompany.gericht.handelsregister}}<br>
+                            {{myCompany.gericht.amtsgericht}}<br>
+                            Registernummer<br>
+                            {{myCompany.gericht.registernummer}}
+                        </p>
+                    </div>
+
+                    <!-- Rechte Spalte -->
+                    <div class="col-9" style="width: 74.9%; float: left">
+                        <p>
+                            Sehr geehrte Damen und Herren,<br><br>
+                            für die Auswertung von Logindaten durch Auskunftsersuchen
+                            stellen wir nach § 23 Justizverfügungs- und Entschädigungsgesetz
+                            folgenden Entschädigungsbetrag in Rechnung.
+                        </p>
+
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                <th scope="col">AZ</th>
+                                <th scope="col">Leistung</th>
+                                <th scope="col">Betrag</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {{#each leistungen}}
+                                    <tr class="item">
+                                        <td>{{az}}</td>
+                                        <td>{{leistung}}</td>
+                                        <td>{{betrag}}</td>
+                                    </tr>
+                                {{/each}}
+                            </tbody>
+                        </table>
+
+                        <p class="faded">
+                            Bitte überweisen Sie die Summe <b>bis {{faelligkeitsDatum}} ohne Abzug</b> auf das unten genannte Konto.
+                        </p>
+                       
+
+                        <table class="table">
+                            <tbody>
+                                <tr class="item">
+                                    <th>Zahlungsempfänger:</th>
+                                    <td>{{myCompany.name}}</td>
+                                </tr>
+                                <tr class="item">
+                                    <th>IBAN:</th>
+                                    <td>{{myCompany.bank.IBAN}}</td>
+                                </tr>
+                                <tr class="item">
+                                    <th>BIC:</th>
+                                    <td>{{myCompany.bank.BIC}}</td>
+                                </tr>
+                                <tr class="item">
+                                    <th>Kreditinstitut:</th>
+                                    <td>{{myCompany.bank.name}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <p>
+                            Mit freundlichen Grüßen<br>
+                            {{myCompany.geschaeftsfuehrer}}
+                        </p>
+
+                    </div>
+                </div>
+            </div>                       
+                
+        </body>
+    </div>
+
+</html>

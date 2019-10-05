@@ -1,0 +1,8 @@
+{
+  "img": {
+    "demo": "demo.png"
+  },
+  "downloadFilename": "generic.pdf",
+  "documentTitle": "Generic",
+  "htmlContent": "<h1>Hello World!</h1><p>This is the most generic template which allows you to render any HTML you can think of.</p>Bootstrap is included, so you can use fancy things like <div class=\"alert alert-danger\">Alert boxes</div>You can include other resources like images.  <br><p>Lorem ipsum dolor sit amet, consectetur adipisici elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat. Quis aute iure reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint obcaecat cupiditat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>"
+}

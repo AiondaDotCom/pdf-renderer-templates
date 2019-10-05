@@ -1,0 +1,15 @@
+{
+    "footerSpacing": "10",
+    "myCompany": {
+        "geschaeftsfuehrer": "Max Mustermann",
+        "name": "Demo Firma",
+        "taetigkeit": "Softwareentwicklung",
+        "adresse": {
+            "strasse": "Musterstraße 742",
+            "PLZ": "12345",
+            "ort": "Musterstadt"
+        },
+        "telefon": "+49.123.456.7890",
+        "email": "contact@example.com"
+    }
+}
